@@ -70,7 +70,12 @@ public class SystemdictionaryitemController {
 
         return systemdictionaryitemService.selectList(null);
     }
+    // 获取数据课程等级
+    @RequestMapping(value = "/listSn",method = RequestMethod.GET)
+    public List<Systemdictionaryitem> listBySn(String sn){
 
+        return systemdictionaryitemService.selectBySn(sn);
+    }
 
     /**
     * 分页查询数据

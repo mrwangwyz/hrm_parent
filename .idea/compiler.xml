@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hrm_basic_util" />
         <module name="hrm_config_server" />
+        <module name="hrm_course_interface" />
+        <module name="hrm_course_service" />
         <module name="hrm_eureka" />
         <module name="hrm_sysmanage_interface" />
         <module name="hrm_sysmanage_service" />

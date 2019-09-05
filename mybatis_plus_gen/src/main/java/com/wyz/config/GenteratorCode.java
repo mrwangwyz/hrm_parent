@@ -14,7 +14,7 @@ public class GenteratorCode {
 
     public static void main(String[] args) throws InterruptedException {
         //用来获取Mybatis-Plus.properties文件的配置信息
-        ResourceBundle rb = ResourceBundle.getBundle("mybatisplus-sysmanage"); //不要加后缀
+        ResourceBundle rb = ResourceBundle.getBundle("mybatisplus-course"); //不要加后缀
         AutoGenerator mpg = new AutoGenerator();
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
@@ -39,7 +39,7 @@ public class GenteratorCode {
         StrategyConfig strategy = new StrategyConfig();
         strategy.setTablePrefix(new String[] { "t_" });// 此处可以修改为您的表前缀
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
-        strategy.setInclude(new String[]{"t_systemdictionary","t_systemdictionaryitem"}); // 需要生成的表
+        strategy.setInclude(new String[]{"t_course", "t_course_detail","t_course_market","t_course_resource"}); // 需要生成的表
         mpg.setStrategy(strategy);
         // 包配置
         PackageConfig pc = new PackageConfig();

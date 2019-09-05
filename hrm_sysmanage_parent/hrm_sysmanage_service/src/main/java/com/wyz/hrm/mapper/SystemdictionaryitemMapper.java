@@ -3,6 +3,8 @@ package com.wyz.hrm.mapper;
 import com.wyz.hrm.domain.Systemdictionaryitem;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 
+import java.util.List;
+
 /**
  * <p>
  *  Mapper 接口

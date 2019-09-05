@@ -1,0 +1,20 @@
+package com.wyz.hrm.service.impl;
+
+import com.wyz.hrm.domain.CourseDetail;
+import com.wyz.hrm.mapper.CourseDetailMapper;
+import com.wyz.hrm.service.ICourseDetailService;
+import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import org.springframework.stereotype.Service;
+
+/**
+ * <p>
+ *  服务实现类
+ * </p>
+ *
+ * @author wyz
+ * @since 2019-09-04
+ */
+@Service
+public class CourseDetailServiceImpl extends ServiceImpl<CourseDetailMapper, CourseDetail> implements ICourseDetailService {
+
+}
