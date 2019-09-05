@@ -1,0 +1,4 @@
+com\wyz\hrm\config\DocumentationConfig.class
+com\wyz\hrm\config\SwaggerConfig.class
+com\wyz\hrm\Zuul9527Application.class
+com\wyz\hrm\config\GlobalCorsConfig.class

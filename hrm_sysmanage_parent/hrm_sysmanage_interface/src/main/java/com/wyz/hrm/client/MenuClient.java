@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(value = "RENLI-HRM-SYSMANAGE",configuration = FeignClientsConfiguration.class,
+@FeignClient(value = "HRM-SYSMANAGE",configuration = FeignClientsConfiguration.class,
         fallbackFactory = MenuClientHystrixFallbackFactory.class)
-@RequestMapping("/product/menu")
+@RequestMapping("/menu")
 public interface MenuClient {
     /**
      * 保存和修改公用的

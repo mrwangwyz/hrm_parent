@@ -12,7 +12,7 @@ import java.util.List;
 
 @FeignClient(value = "AIGOU-ZUUL-GATEWAY",configuration = FeignClientsConfiguration.class,
         fallbackFactory = SystemdictionaryitemClientHystrixFallbackFactory.class)
-@RequestMapping("/product/systemdictionaryitem")
+@RequestMapping("/systemdictionaryitem")
 public interface SystemdictionaryitemClient {
     /**
      * 保存和修改公用的

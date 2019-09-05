@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(value = "RENLI-HRM-SYSMANAGE",configuration = FeignClientsConfiguration.class,
+@FeignClient(value = "HRM-SYSMANAGE",configuration = FeignClientsConfiguration.class,
         fallbackFactory = MealClientHystrixFallbackFactory.class)
-@RequestMapping("/product/meal")
+@RequestMapping("/meal")
 public interface MealClient {
     /**
      * 保存和修改公用的

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(value = "RENLI-HRM-COURSE",configuration = FeignClientsConfiguration.class,
+@FeignClient(value = "HRM-ES",configuration = FeignClientsConfiguration.class,
         fallbackFactory = ${entity}ClientHystrixFallbackFactory.class)
 @RequestMapping("/product/${table.entityPath}")
 public interface ${entity}Client {

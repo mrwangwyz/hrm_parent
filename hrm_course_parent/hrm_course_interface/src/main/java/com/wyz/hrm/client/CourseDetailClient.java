@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(value = "RENLI-HRM-COURSE",configuration = FeignClientsConfiguration.class,
+@FeignClient(value = "HRM-COURSE",configuration = FeignClientsConfiguration.class,
         fallbackFactory = CourseDetailClientHystrixFallbackFactory.class)
-@RequestMapping("/product/courseDetail")
+@RequestMapping("/courseDetail")
 public interface CourseDetailClient {
     /**
      * 保存和修改公用的

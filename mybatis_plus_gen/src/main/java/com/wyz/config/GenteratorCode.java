@@ -14,7 +14,7 @@ public class GenteratorCode {
 
     public static void main(String[] args) throws InterruptedException {
         //用来获取Mybatis-Plus.properties文件的配置信息
-        ResourceBundle rb = ResourceBundle.getBundle("mybatisplus-course"); //不要加后缀
+        ResourceBundle rb = ResourceBundle.getBundle("mybatisplus-es"); //不要加后缀
         AutoGenerator mpg = new AutoGenerator();
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
@@ -39,7 +39,7 @@ public class GenteratorCode {
         StrategyConfig strategy = new StrategyConfig();
         strategy.setTablePrefix(new String[] { "t_" });// 此处可以修改为您的表前缀
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
-        strategy.setInclude(new String[]{"t_course", "t_course_detail","t_course_market","t_course_resource"}); // 需要生成的表
+        strategy.setInclude(new String[]{"t_es_course"}); // 需要生成的表
         mpg.setStrategy(strategy);
         // 包配置
         PackageConfig pc = new PackageConfig();
@@ -47,7 +47,7 @@ public class GenteratorCode {
         pc.setController("web.controller");
         pc.setService("service");
         pc.setServiceImpl("service.impl");
-        pc.setEntity("domain");
+        pc.setEntity("doc");
         pc.setMapper("mapper");
         mpg.setPackageInfo(pc);
 
@@ -67,7 +67,7 @@ public class GenteratorCode {
         focList.add(new FileOutConfig("/templates/entity.java.vm") {
             @Override
             public String outputFile(TableInfo tableInfo) {
-                return rb.getString("InterfaceOutputDirBase")+ "/com/wyz/hrm/domain/" + tableInfo.getEntityName() + ".java";
+                return rb.getString("InterfaceOutputDirBase")+ "/com/wyz/hrm/doc/" + tableInfo.getEntityName() + ".java";
             }
         });
         // 调整 query 生成目录演示

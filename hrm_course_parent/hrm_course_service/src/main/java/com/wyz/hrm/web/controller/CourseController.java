@@ -1,11 +1,10 @@
 package com.wyz.hrm.web.controller;
 
-import com.wyz.hrm.service.ICourseService;
 import com.wyz.hrm.domain.Course;
 import com.wyz.hrm.query.CourseQuery;
+import com.wyz.hrm.service.ICourseService;
 import com.wyz.hrm.util.AjaxResult;
 import com.wyz.hrm.util.PageList;
-import com.baomidou.mybatisplus.plugins.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
